@@ -16,6 +16,7 @@ class ViewController: UIViewController, SRWebSocketDelegate{
         super.viewDidLoad()
                 
         webSocket = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "wss://check-out.herokuapp.com")!))
+        //webSocket = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "ws://52.68.115.249:3000")!))
         webSocket.delegate = self
         webSocket.open()
     }

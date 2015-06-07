@@ -13,6 +13,16 @@ class GraphTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        //ここに円形のやーつ！
+        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.
+        // Screen Size の取得
+        let screenWidth = self.bounds.width
+        let screenHeight = self.bounds.height
+        
+        var testDraw = DrawFigure(frame: CGRectMake(0, 0, screenWidth, screenHeight))
+        self.addSubview(testDraw)
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

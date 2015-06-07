@@ -10,7 +10,7 @@ import UIKit
 
 class GraphViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
-    var members = ["ken", "jum"]
+    var members = ["きらっくま", "ken", "moe", "jum","akira","yoshiaki"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +46,23 @@ class GraphViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell!
         if indexPath.row == 0 {
             // 1cell
-             cell = tableView.dequeueReusableCellWithIdentifier("graph") as? GraphTableViewCell
+             var cell = tableView.dequeueReusableCellWithIdentifier("graph") as? GraphTableViewCell
+            return cell!
         }else if(indexPath.row == members.count - 1 + 2  - 1){
             // last cell
-             cell = tableView.dequeueReusableCellWithIdentifier("cache") as? CacheTableViewCell
+             var cell = tableView.dequeueReusableCellWithIdentifier("cache") as? CacheTableViewCell
+            return cell!
         }else{
             //member cell
-             cell = tableView.dequeueReusableCellWithIdentifier("member") as? MemberTableViewCell
+            var cell = tableView.dequeueReusableCellWithIdentifier("member") as? MemberTableViewCell
+            cell?.nameLbl.text = self.members[indexPath.row - 1]
+            cell?.priceLbl.text = "2000円"
+            cell?.nameIcon.image=UIImage(named: "beer.jpg")
+
+            return cell!
         }
-        return cell
     }
     
 
