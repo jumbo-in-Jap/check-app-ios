@@ -31,17 +31,17 @@ class DrawFigure: UIView {
         
         //円グラフ描画時の中心座標のX,Y
         var centralX = 140  //計算上は160のはずだけどなんかずれる
-        var centralY = 140  //計算上は155だけどなんかずれる
+        var centralY = 130  //計算上は155だけどなんかずれる
         
         //円グラフの半径
-        var radiusGraph :Double=100
+        var radiusGraph :Double=90
         
         //小さい円の半径
         let radiusSmallCircle :CGFloat=40
         
         //食べ物・飲み物の割合
-        var food :Double = 0.6
-        var drink :Double = 0.4
+        var food :Double = 0.62
+        var drink :Double = 0.38
         
         //food描画 オレンジで描画
         for(var i :Double=0;i<food;i+=0.001){
@@ -156,19 +156,37 @@ class DrawFigure: UIView {
         // Labelを作成.
         let drinkPercentLabel: UILabel = UILabel(frame: CGRectMake(0,0,23,20))
         // 背景をオレンジ色にする.
-        drinkPercentLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
+        drinkPercentLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.0)
         // Labelに文字を代入.
-        drinkPercentLabel.text = "80%"
+        drinkPercentLabel.text = "38"
         // 文字の色を黒にする.
-        drinkPercentLabel.textColor = UIColor.blackColor()
+        drinkPercentLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
         // Textを中央寄せにする.
         drinkPercentLabel.textAlignment = NSTextAlignment.Left
         // 配置する座標を設定する.
         drinkPercentLabel.layer.position = CGPoint(x: CGFloat(startX+20) ,y: CGFloat(startY+20))
         //fontsize
-        drinkPercentLabel.font = UIFont.systemFontOfSize(10);
+        drinkPercentLabel.font = UIFont(name: "Helvetica Neue", size: 14)
         // ViewにLabelを追加.
         self.addSubview(drinkPercentLabel)
+        
+        // Labelを作成.
+        let drinkPercentLabelP: UILabel = UILabel(frame: CGRectMake(0,0,23,20))
+        // 背景をオレンジ色にする.
+        drinkPercentLabelP.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.0)
+        // Labelに文字を代入.
+        drinkPercentLabelP.text = "%"
+        // 文字の色を黒にする.
+        drinkPercentLabelP.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+        // Textを中央寄せにする.
+        drinkPercentLabelP.textAlignment = NSTextAlignment.Left
+        // 配置する座標を設定する.
+        drinkPercentLabelP.layer.position = CGPoint(x: CGFloat(startX+37) ,y: CGFloat(startY+27))
+        //fontsize
+        drinkPercentLabelP.font = UIFont(name: "Helvetica Neue", size: 8)
+        // ViewにLabelを追加.
+        self.addSubview(drinkPercentLabelP)
+
 
         
         //----------白い円→緑色(foodの円)→白い円の順で描画----------
@@ -214,58 +232,96 @@ class DrawFigure: UIView {
         // Labelを作成.
         let foodPercentLabel: UILabel = UILabel(frame: CGRectMake(0,0,23,20))
         // 背景をオレンジ色にする.
-        foodPercentLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
+        foodPercentLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.0)
         // Labelに文字を代入.
-        foodPercentLabel.text = "20%"
+        foodPercentLabel.text = "62"
         // 文字の色を黒にする.
-        foodPercentLabel.textColor = UIColor.blackColor()
+        foodPercentLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+
         // Textを中央寄せにする.
-        foodPercentLabel.textAlignment = NSTextAlignment.Center
+        foodPercentLabel.textAlignment = NSTextAlignment.Left
         // 配置する座標を設定する.
         foodPercentLabel.layer.position = CGPoint(x: CGFloat(startX+20) ,y: CGFloat(startY+20))
         //fontsize
-        foodPercentLabel.font = UIFont.systemFontOfSize(10);
+        foodPercentLabel.font = UIFont(name: "Helvetica Neue", size: 14)
         // ViewにLabelを追加.
         self.addSubview(foodPercentLabel)
         
         
+        // Labelを作成.
+        let foodPercentLabelP: UILabel = UILabel(frame: CGRectMake(0,0,10,10))
+        // 背景をオレンジ色にする.
+        foodPercentLabelP.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.0)
+        // Labelに文字を代入.
+        foodPercentLabelP.text = "%"
+        // 文字の色を黒にする.
+        foodPercentLabelP.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+        
+        // Textを中央寄せにする.
+        foodPercentLabelP.textAlignment = NSTextAlignment.Left
+        // 配置する座標を設定する.
+        foodPercentLabelP.layer.position = CGPoint(x: CGFloat(startX+29) ,y: CGFloat(startY+27))
+        //fontsize
+        foodPercentLabelP.font = UIFont(name: "Helvetica Neue", size: 8)
+        // ViewにLabelを追加.
+        self.addSubview(foodPercentLabelP)
+
         
         //名前ラベル
         
         // Labelを作成.
-        let nameLabel: UILabel = UILabel(frame: CGRectMake(0,0,100,20))
+        let nameLabel: UILabel = UILabel(frame: CGRectMake(0,0,90,20))
         // 背景をオレンジ色にする.
         nameLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
         // Labelに文字を代入.
-        nameLabel.text = "きらっくま"
+        nameLabel.text = "ひろのん"
         // 文字の色を黒にする.
-        nameLabel.textColor = UIColor.blackColor()
+        nameLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+
         // Textを中央寄せにする.
         nameLabel.textAlignment = NSTextAlignment.Left
         // 配置する座標を設定する.
         nameLabel.layer.position = CGPoint(x: CGFloat(180) ,y: CGFloat(140))
         //fontsize
-        nameLabel.font = UIFont.systemFontOfSize(10);
+        nameLabel.font = UIFont(name: "ヒラギノ角ゴ Pro", size: 18)
         // ViewにLabelを追加.
         self.addSubview(nameLabel)
 
         
         //金額ラベル
-        let priceLabel: UILabel = UILabel(frame: CGRectMake(0,0,100,20))
+        let priceLabel: UILabel = UILabel(frame: CGRectMake(0,0,100,30))
         // 背景をオレンジ色にする.
         priceLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
         // Labelに文字を代入.
-        priceLabel.text = "1280円"
+        priceLabel.text = "1280"
         // 文字の色を黒にする.
-        priceLabel.textColor = UIColor.blackColor()
+        priceLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
         // Textを中央寄せにする.
         priceLabel.textAlignment = NSTextAlignment.Left
         // 配置する座標を設定する.
         priceLabel.layer.position = CGPoint(x: CGFloat(160) ,y: CGFloat(170))
         //fontsize
-        priceLabel.font = UIFont.systemFontOfSize(30);
+        priceLabel.font = UIFont(name: "Helvetica Neue", size: 36)
         // ViewにLabelを追加.
         self.addSubview(priceLabel)
+        
+        //yenラベル
+        let yenLabel: UILabel = UILabel(frame: CGRectMake(0,0,25,10))
+        // 背景をオレンジ色にする.
+        yenLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
+        // Labelに文字を代入.
+        yenLabel.text = "円"
+        // 文字の色を黒にする.
+        yenLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+        // Textを中央寄せにする.
+        yenLabel.textAlignment = NSTextAlignment.Left
+        // 配置する座標を設定する.
+        yenLabel.layer.position = CGPoint(x: CGFloat(210) ,y: CGFloat(175))
+        //fontsize
+        yenLabel.font = UIFont(name: "ヒラギノ角ゴ Pro W6", size: 19)
+        // ViewにLabelを追加.
+        self.addSubview(yenLabel)
+        
 
         //アイコンのimage
         var myImageView: UIImageView!
@@ -281,12 +337,12 @@ class DrawFigure: UIView {
         self.addSubview(myImageView)
         
         //右下の注釈つける
-        //drink描画
-        for(var i :Double=0;i<10;i++){
+        //drink部分
+        for(var i :Double=0;i<5;i++){
             //i(割合)をラジアンに変換
             var rad = i*2*M_PI
-            var startX :Double = Double(screenWidth)*4.0/10.0+i*3
-            var startY :Double = Double(screenHeight)*5.1/10.0
+            var startX :Double = Double(screenWidth)*5.0/10.0+i*3
+            var startY :Double = Double(screenHeight)*5.0/10.0
             
             var oval = UIBezierPath(ovalInRect: CGRectMake(CGFloat(startX),CGFloat(startY), 5, 5))
             
@@ -302,7 +358,78 @@ class DrawFigure: UIView {
             // 描画
             oval.stroke()
         }
+        //food部分
+        for(var i :Double=0;i<5;i++){
+            //i(割合)をラジアンに変換
+            var rad = i*2*M_PI
+            var startX :Double = Double(screenWidth)*7.5/10.0+i*3
+            var startY :Double = Double(screenHeight)*5.0/10.0
+            
+            var oval = UIBezierPath(ovalInRect: CGRectMake(CGFloat(startX),CGFloat(startY), 5, 5))
+            
+            // 塗りつぶし色の設定
+            UIColor(red:1.0,green:0.682 ,blue:0.008,alpha:1.0).setFill()
+            // 内側の塗りつぶし
+            oval.fill()
+            
+            // stroke 色の設定
+            UIColor(red:1.0,green:0.682 ,blue:0.008,alpha:1.0).setStroke()
+            // ライン幅
+            //oval.lineWidth = 2
+            // 描画
+            oval.stroke()
+        }
         
+        
+        //drinkラベル
+        let foodLabel: UILabel = UILabel(frame: CGRectMake(0,0,30,10))
+        // 背景をオレンジ色にする.
+        foodLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
+        // Labelに文字を代入.
+        foodLabel.text = "drink"
+        // 文字の色を黒にする.
+        foodLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+
+        // Textを中央寄せにする.
+        foodLabel.textAlignment = NSTextAlignment.Left
+        // 配置する座標を設定する.
+        foodLabel.layer.position = CGPoint(x: CGFloat(Double(screenWidth)*6.3/10.0) ,y: CGFloat(Double(screenHeight)*5.03/10.0))
+        //fontsize
+        foodLabel.font = UIFont(name: "Helvetica Neue", size: 13)
+        // ViewにLabelを追加.
+        self.addSubview(foodLabel)
+        
+        //foodラベル
+        let drinkLabel: UILabel = UILabel(frame: CGRectMake(0,0,30,20))
+        // 背景をオレンジ色にする.
+        drinkLabel.backgroundColor = UIColor(red:1.0,green:1.0,blue:1.0,alpha:1.0)
+        // Labelに文字を代入.
+        drinkLabel.text = "food"
+        // 文字の色を黒にする.
+        drinkLabel.textColor = UIColor(red:0.494,green:0.522 ,blue:0.580,alpha:1.0)
+
+        // Textを中央寄せにする.
+        drinkLabel.textAlignment = NSTextAlignment.Left
+        // 配置する座標を設定する.
+        drinkLabel.layer.position = CGPoint(x: CGFloat(Double(screenWidth)*8.8/10.0) ,y: CGFloat(Double(screenHeight)*5.03/10.0))
+        //fontsize
+        drinkLabel.font = UIFont(name: "Helvetica Neue", size: 13)
+        // ViewにLabelを追加.
+        self.addSubview(drinkLabel)
+        
+        //仕切るところのbarのイメージ
+        var myImageViewBar: UIImageView!
+        // UIImageViewを作成する.
+        myImageViewBar = UIImageView(frame: CGRectMake(0,0,CGFloat(640),CGFloat(10)))
+        // 表示する画像を設定する.
+        let myImageBar = UIImage(named: "decoration_nami@2x.png")
+        // 画像をUIImageViewに設定する.
+        myImageViewBar.image = myImageBar
+        // 画像の表示する座標を指定する.
+        myImageViewBar.layer.position = CGPoint(x: CGFloat(0) ,y: CGFloat(300))
+        // UIImageViewをViewに追加する.
+        self.addSubview(myImageViewBar)
+
 
     }
 }

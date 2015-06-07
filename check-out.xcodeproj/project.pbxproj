@@ -31,6 +31,7 @@
 		9201BC9A1B24393C0016EECC /* DrawFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9201BC991B24393C0016EECC /* DrawFigure.swift */; };
 		926D9A961B244AD500394394 /* beer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 926D9A951B244AD500394394 /* beer.jpg */; };
 		926D9A981B2459BE00394394 /* DrawFigureMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D9A971B2459BE00394394 /* DrawFigureMember.swift */; };
+		92BA24EF1B24CD72006F035F /* decoration_nami@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92BA24EE1B24CD72006F035F /* decoration_nami@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		9201BC991B24393C0016EECC /* DrawFigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawFigure.swift; sourceTree = "<group>"; };
 		926D9A951B244AD500394394 /* beer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = beer.jpg; path = ../../../Downloads/beer.jpg; sourceTree = "<group>"; };
 		926D9A971B2459BE00394394 /* DrawFigureMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawFigureMember.swift; sourceTree = "<group>"; };
+		92BA24EE1B24CD72006F035F /* decoration_nami@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "decoration_nami@2x.png"; path = "../../../Downloads/decoration_nami@2x.png"; sourceTree = "<group>"; };
 		D996B90A3680855663D6A94A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 		8C2A4CBB1B22D7CB00165E5F /* check-out */ = {
 			isa = PBXGroup;
 			children = (
+				92BA24EE1B24CD72006F035F /* decoration_nami@2x.png */,
 				926D9A951B244AD500394394 /* beer.jpg */,
 				8CF6DF0B1B23E75300B88184 /* layout */,
 				8C2A4CFB1B236CAE00165E5F /* model */,
@@ -318,6 +321,7 @@
 				8CF6DF131B23E78C00B88184 /* CacheTableViewCell.xib in Resources */,
 				8C2A4CC91B22D7CB00165E5F /* LaunchScreen.xib in Resources */,
 				8C2A4CC61B22D7CB00165E5F /* Images.xcassets in Resources */,
+				92BA24EF1B24CD72006F035F /* decoration_nami@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
