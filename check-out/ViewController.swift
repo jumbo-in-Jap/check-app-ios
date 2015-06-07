@@ -14,10 +14,9 @@ class ViewController: UIViewController, SRWebSocketDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         webSocket = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "wss://check-out.herokuapp.com")!))
         webSocket.delegate = self
-        
         webSocket.open()
     }
 

@@ -14,6 +14,20 @@
 		8C2A4CC61B22D7CB00165E5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A4CC51B22D7CB00165E5F /* Images.xcassets */; };
 		8C2A4CC91B22D7CB00165E5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C2A4CC71B22D7CB00165E5F /* LaunchScreen.xib */; };
 		8C2A4CD51B22D7CB00165E5F /* check_outTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4CD41B22D7CB00165E5F /* check_outTests.swift */; };
+		8C2A4CF11B235C3700165E5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4CF01B235C3700165E5F /* WelcomeViewController.swift */; };
+		8C2A4CF31B235ED600165E5F /* ForMakeRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4CF21B235ED600165E5F /* ForMakeRoomViewController.swift */; };
+		8C2A4CF51B235EED00165E5F /* ForAttendRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4CF41B235EEC00165E5F /* ForAttendRoomViewController.swift */; };
+		8C2A4CF71B2369C200165E5F /* RoomInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4CF61B2369C100165E5F /* RoomInviteViewController.swift */; };
+		8C2A4CFA1B236A5000165E5F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A4CF91B236A5000165E5F /* WebSocket.swift */; };
+		8CAEA1A41B23C861005C13A1 /* SocketObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEA1A31B23C861005C13A1 /* SocketObject.swift */; };
+		8CAEA1A81B23CCB3005C13A1 /* AttendRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEA1A71B23CCB3005C13A1 /* AttendRoomTableViewController.swift */; };
+		8CF6DF0A1B23E6BA00B88184 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6DF091B23E6BA00B88184 /* GraphViewController.swift */; };
+		8CF6DF0E1B23E77A00B88184 /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6DF0C1B23E77A00B88184 /* GraphTableViewCell.swift */; };
+		8CF6DF0F1B23E77A00B88184 /* GraphTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF6DF0D1B23E77A00B88184 /* GraphTableViewCell.xib */; };
+		8CF6DF121B23E78C00B88184 /* CacheTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6DF101B23E78C00B88184 /* CacheTableViewCell.swift */; };
+		8CF6DF131B23E78C00B88184 /* CacheTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF6DF111B23E78C00B88184 /* CacheTableViewCell.xib */; };
+		8CF6DF161B23E7A100B88184 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF6DF141B23E7A100B88184 /* MemberTableViewCell.swift */; };
+		8CF6DF171B23E7A100B88184 /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF6DF151B23E7A100B88184 /* MemberTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +53,20 @@
 		8C2A4CD31B22D7CB00165E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2A4CD41B22D7CB00165E5F /* check_outTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = check_outTests.swift; sourceTree = "<group>"; };
 		8C2A4CDF1B22DACA00165E5F /* check-out-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "check-out-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C2A4CF01B235C3700165E5F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8C2A4CF21B235ED600165E5F /* ForMakeRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForMakeRoomViewController.swift; sourceTree = "<group>"; };
+		8C2A4CF41B235EEC00165E5F /* ForAttendRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForAttendRoomViewController.swift; sourceTree = "<group>"; };
+		8C2A4CF61B2369C100165E5F /* RoomInviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomInviteViewController.swift; sourceTree = "<group>"; };
+		8C2A4CF91B236A5000165E5F /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = socket/WebSocket.swift; sourceTree = "<group>"; };
+		8CAEA1A31B23C861005C13A1 /* SocketObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketObject.swift; path = model/SocketObject.swift; sourceTree = "<group>"; };
+		8CAEA1A71B23CCB3005C13A1 /* AttendRoomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendRoomTableViewController.swift; sourceTree = "<group>"; };
+		8CF6DF091B23E6BA00B88184 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		8CF6DF0C1B23E77A00B88184 /* GraphTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphTableViewCell.swift; path = layout/GraphTableViewCell.swift; sourceTree = "<group>"; };
+		8CF6DF0D1B23E77A00B88184 /* GraphTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GraphTableViewCell.xib; path = layout/GraphTableViewCell.xib; sourceTree = "<group>"; };
+		8CF6DF101B23E78C00B88184 /* CacheTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTableViewCell.swift; sourceTree = "<group>"; };
+		8CF6DF111B23E78C00B88184 /* CacheTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CacheTableViewCell.xib; sourceTree = "<group>"; };
+		8CF6DF141B23E7A100B88184 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemberTableViewCell.swift; path = layout/MemberTableViewCell.swift; sourceTree = "<group>"; };
+		8CF6DF151B23E7A100B88184 /* MemberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MemberTableViewCell.xib; path = layout/MemberTableViewCell.xib; sourceTree = "<group>"; };
 		8E11F2F06C0315A63DFE5557 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D996B90A3680855663D6A94A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,10 +113,19 @@
 		8C2A4CBB1B22D7CB00165E5F /* check-out */ = {
 			isa = PBXGroup;
 			children = (
+				8CF6DF0B1B23E75300B88184 /* layout */,
+				8C2A4CFB1B236CAE00165E5F /* model */,
+				8C2A4CF81B236A1F00165E5F /* socket */,
 				8C2A4CE71B23521700165E5F /* lib */,
 				8C2A4CDE1B22DAB700165E5F /* objc */,
 				8C2A4CBE1B22D7CB00165E5F /* AppDelegate.swift */,
 				8C2A4CC01B22D7CB00165E5F /* ViewController.swift */,
+				8C2A4CF01B235C3700165E5F /* WelcomeViewController.swift */,
+				8C2A4CF21B235ED600165E5F /* ForMakeRoomViewController.swift */,
+				8C2A4CF41B235EEC00165E5F /* ForAttendRoomViewController.swift */,
+				8C2A4CF61B2369C100165E5F /* RoomInviteViewController.swift */,
+				8CAEA1A71B23CCB3005C13A1 /* AttendRoomTableViewController.swift */,
+				8CF6DF091B23E6BA00B88184 /* GraphViewController.swift */,
 				8C2A4CC21B22D7CB00165E5F /* Main.storyboard */,
 				8C2A4CC51B22D7CB00165E5F /* Images.xcassets */,
 				8C2A4CC71B22D7CB00165E5F /* LaunchScreen.xib */,
@@ -135,6 +172,35 @@
 			children = (
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		8C2A4CF81B236A1F00165E5F /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				8C2A4CF91B236A5000165E5F /* WebSocket.swift */,
+			);
+			name = socket;
+			sourceTree = "<group>";
+		};
+		8C2A4CFB1B236CAE00165E5F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8CAEA1A31B23C861005C13A1 /* SocketObject.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8CF6DF0B1B23E75300B88184 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				8CF6DF0C1B23E77A00B88184 /* GraphTableViewCell.swift */,
+				8CF6DF0D1B23E77A00B88184 /* GraphTableViewCell.xib */,
+				8CF6DF101B23E78C00B88184 /* CacheTableViewCell.swift */,
+				8CF6DF111B23E78C00B88184 /* CacheTableViewCell.xib */,
+				8CF6DF141B23E7A100B88184 /* MemberTableViewCell.swift */,
+				8CF6DF151B23E7A100B88184 /* MemberTableViewCell.xib */,
+			);
+			name = layout;
 			sourceTree = "<group>";
 		};
 		9F87E282A9D02EFA9CED35CA /* Frameworks */ = {
@@ -236,7 +302,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF6DF0F1B23E77A00B88184 /* GraphTableViewCell.xib in Resources */,
+				8CF6DF171B23E7A100B88184 /* MemberTableViewCell.xib in Resources */,
 				8C2A4CC41B22D7CB00165E5F /* Main.storyboard in Resources */,
+				8CF6DF131B23E78C00B88184 /* CacheTableViewCell.xib in Resources */,
 				8C2A4CC91B22D7CB00165E5F /* LaunchScreen.xib in Resources */,
 				8C2A4CC61B22D7CB00165E5F /* Images.xcassets in Resources */,
 			);
@@ -289,8 +358,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2A4CF11B235C3700165E5F /* WelcomeViewController.swift in Sources */,
+				8CF6DF0A1B23E6BA00B88184 /* GraphViewController.swift in Sources */,
+				8C2A4CF51B235EED00165E5F /* ForAttendRoomViewController.swift in Sources */,
+				8C2A4CF71B2369C200165E5F /* RoomInviteViewController.swift in Sources */,
 				8C2A4CC11B22D7CB00165E5F /* ViewController.swift in Sources */,
 				8C2A4CBF1B22D7CB00165E5F /* AppDelegate.swift in Sources */,
+				8CF6DF161B23E7A100B88184 /* MemberTableViewCell.swift in Sources */,
+				8CAEA1A41B23C861005C13A1 /* SocketObject.swift in Sources */,
+				8C2A4CF31B235ED600165E5F /* ForMakeRoomViewController.swift in Sources */,
+				8CAEA1A81B23CCB3005C13A1 /* AttendRoomTableViewController.swift in Sources */,
+				8CF6DF0E1B23E77A00B88184 /* GraphTableViewCell.swift in Sources */,
+				8CF6DF121B23E78C00B88184 /* CacheTableViewCell.swift in Sources */,
+				8C2A4CFA1B236A5000165E5F /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
